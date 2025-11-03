@@ -1,0 +1,284 @@
+        body{
+            background-color: #A4B465;
+        }
+        .atas{
+           background-color: #606C38;
+           height: 90px;
+           display: flex;               
+           align-items: center;        
+           color: rgb(255, 255, 255);              
+           font-size: 20px;
+           margin: -8px;
+           font-family: "Keania One", sans-serif;
+           font-size: 35px;
+           justify-content: space-around;
+           align-items: center;
+           gap: 650px;
+           
+        }
+
+        .menu ul{
+            list-style: none; 
+            font-size: 22px;  
+        }
+
+        .menu ul li{
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        .menu ul li a{
+            color: white;
+            text-decoration: none;
+            
+        }
+
+        .menu ul li a:hover{
+            color: black;
+            transition: ease 0.5s;
+        }
+
+        /* .menu ul li button{
+            background-color: #3E5F44;
+            border: 2px solid white;
+            border-radius: 50px;
+            color: white;
+            padding: 10px 30px;
+            cursor: pointer;
+            font-size: 20px;
+            
+        } */
+
+        .profil{
+            text-align: center;
+            margin: 6px;
+            height: 600px;
+            margin-left: -10px;
+            margin-right: -8px;
+            background-color: #DDA15E;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            
+            /* margin-left: 100px; */
+            /* border-radius: 10px; */
+        }
+
+        .profil img{
+            /* height: 400px;
+            width: 350px; */
+            /* border-radius: 300px; */
+            margin-top: 175px;
+            margin-left: 0%;
+            margin-top: 0px;
+            padding-top: 100px;
+
+        }
+
+        
+
+        .nama{
+            margin-top: 50px;
+            font-size: 30px;
+            margin-left: -250px;
+            
+        }
+
+        .aku{
+            font-size: 55px;
+            margin: 6px;
+            height: 500px;
+            margin-left: -10px;
+            margin-right: -8px;
+            background-color: #FEFAE0;
+            padding-left: 55px;
+            margin-top: -10px;
+            padding-top: 100px;
+        }
+        .ket{
+            font-size: 25px;
+            
+        }
+
+
+        .riwayat{
+            justify-content: space-around;
+            margin-left: 520px;
+            padding-top: 10px;
+            
+        }
+
+        .sidebar{
+            font-size: 30px;
+            display: flex;
+            background-color: aqua;
+            width: 250Px;
+            height: 580px;
+            margin: -10px;
+            display: flex;             
+            justify-content: center;
+            
+        }
+
+        .kotak {
+            /* background-color: white;
+            border: 1px solid #ccc; */
+            padding: 10px;
+            font-size: 18px;
+           
+
+        }
+
+        .box{
+            display: grid;
+            margin-top: -30px;
+            margin-bottom: -28px;
+            margin-left:30px;
+            grid-template-columns: repeat(7, 1fr);
+            
+        }
+
+        .kotaktk{
+            margin-left: 40px;
+            list-style: none; 
+            text-decoration: none;
+            color: black;
+        }
+
+        .kotaktk2{
+            margin-left: 40px;
+            list-style: none; 
+            text-decoration: none;
+            color: black;
+        }
+
+        .kotaktk2:hover{
+            color: white;
+            transition: ease 0,5s;
+        }
+        
+        .kotaksd{
+            margin-left: -35px;
+            list-style: none; 
+            text-decoration: none;
+            color: black;
+        }
+
+        .kotaksd2{
+            margin-left: -35px;
+            list-style: none; 
+            text-decoration: none;
+            color: black;
+        }
+
+         .kotaksd2:hover{
+            color: white;
+            transition: ease 0,5s;
+        }
+
+        .kotaksmp{
+            margin-left: -40px;
+            list-style: none; 
+            text-decoration: none;
+            color: black;
+        }
+
+        .kotaksmp2{
+            margin-left: -40px;
+            list-style: none; 
+            text-decoration: none;
+            color: black;
+        }
+
+         .kotaksmp2:hover{
+            color: white;
+            transition: ease 0,5s;
+        }
+
+        .kotaksma{
+            margin-left: -100px;
+            list-style: none; 
+            text-decoration: none;
+            color: black;
+        }
+
+        .kotaksma2{
+            margin-left: -100px;
+            list-style: none; 
+            text-decoration: none;
+            color: black;
+        }
+
+         .kotaksma2:hover{
+            color: white;
+            transition: ease 0,5s;
+        }
+
+        .kotakgaris{
+            border-bottom: 3px solid black;
+            padding-bottom: 50px;
+            
+        }
+
+        .kotaktengah{
+            background-color: rgb(0, 0, 0);
+            height: 100px;
+            width: 1px;
+            margin-left: 58px;
+            margin-top: -33px;
+            
+        }
+
+        
+
+        #kotak{
+            background-color: white;
+            border: 1px solid #ccc;
+            height: 100px;
+            width: 1px;
+            margin-left: 170px;
+        }
+
+        .bawah{
+           background-color: green;
+           height: 10px;
+           display: flex;             
+           justify-content: center;    
+           align-items: center;        
+           color: black;              
+           font-size: 20px;
+           margin: -8px;  
+           padding-right: 1000px;
+           padding-bottom: 100px; 
+          
+            
+            
+        }
+
+        .wa{
+          margin-top: -72px;
+          padding-bottom: 15px;
+          font-size: 20px;
+        }
+
+        .nomer{
+            margin-top: -35px;
+            margin-left: 80px;
+            font-size: 25px;
+        }
+
+        .ig{
+            margin-left: 1100px;
+            margin-top: -87px;
+            font-size: 20px;
+        }
+
+        .ig2{
+          margin-top: -22px;
+          margin-left: 1130px;
+          font-size: 25px; 
+        }
+
+        /* .kotak:hover{
+            background-color: rgb(121, 121, 121);
+        } */

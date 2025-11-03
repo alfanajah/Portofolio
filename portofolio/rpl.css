@@ -1,0 +1,25 @@
+body{
+    background-color: aquamarine;
+    font-family: "Poppins", sans-serif;
+}.ket{
+    display: grid;
+    align-items: center;
+}.judul{
+   font-size: 50px;
+   font-weight: 700;
+   
+   font: bold;
+   padding-left: 630px;
+}.subjudul{
+    font-size: 35px;
+    font-weight: 700;
+    
+    font: bold; 
+    margin-top: 100px;
+    margin-left: 40px;
+}.isi{
+    margin-top: 20px;
+    margin-left: 20px;
+    font-weight: 700;
+
+}

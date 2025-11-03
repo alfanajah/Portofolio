@@ -1,0 +1,886 @@
+body{
+    margin: 0px;
+    font-family: "Poppins", sans-serif;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 700px;
+    position:fixed ;
+    right: 0;
+    left: 0;
+    height: 75px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.title{
+    font-weight: 600;
+    font-size: 20px;
+    color: black;
+}
+
+.menu ul{
+    list-style: none;
+}
+
+.menu ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 16px; 
+    position: relative;
+}
+
+.menu ul li a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 3px;
+    background: aqua;
+    transition: 0.5s;
+}
+
+.menu ul li a:hover::after{
+    width: 100%;
+}
+ .hero{
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 150px;
+ }
+
+ .hero-content p{
+    margin: 0;
+    font-size: 60px;
+    font-weight: bold;
+ }
+
+ .hero-content span{
+    color: #4070F4;
+ } 
+
+  .hero-content button{
+    background-color: #4070F4;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    box-shadow: 0 4px 8px black;
+    padding: 10px 35px;
+
+ }
+
+ .hero-content button:hover{
+    background-color: white;
+    transition: ease 0.5s;
+    color: #4070F4;
+ }
+
+ .social-media{
+    margin-left: 140px;
+    
+ }
+
+ .hero-img img{
+    height: 90%;
+    width: 100%;
+    border-radius: 20px;
+
+ }
+ 
+ 
+ .social-media ul{
+    list-style: none;
+ }
+
+ .social-media ul li{
+    display: inline-block;
+    margin-right: 20px;
+ }
+ 
+ .social-media ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+ }
+
+ .about{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    background-color: #4070F4;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    padding-left: 70px;
+ }
+
+ .about-skill{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px; 
+ }
+
+ .about-box{
+    width: 200px;
+    height: 150px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 8px black;
+    
+    
+ }
+
+ .about-box:hover{
+    transform: scale(1.06);
+    transition: ease 0.7s;
+ }
+
+ .about-content-title{
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+ }
+
+ .about-content-subtitle{
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+    font: bold;
+    margin-bottom:-10px;
+    margin-top: -10px;
+ }
+
+ .about-content-desc{
+    font-weight: 500;
+    color: white;
+ }
+
+ .about-content button{
+    padding: 10px 40px;
+    font-size: 16px;
+    background-color: white;
+    color: #4070F4;
+    border: none;
+    border-radius: 8px;
+    box-shadow:0 4px 8px black;
+ }
+
+ .about-content button:hover{
+    background-color: #4070F4;
+    transition: ease 0.5s;
+    color: white;
+ }
+
+ .school{
+   height: 100vh;
+   display: flex;
+   flex-direction:column;
+   text-align: center;
+ }
+
+ .school-judul{
+   margin-top: 100px;
+   font-size: 50px;
+   font-weight: 700;
+   color: #4070F4;
+   font: bold;
+ }
+
+ .school-kotak{
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   align-items: center;
+   margin-left: 173px;
+   gap: 50px;
+ }
+ .kotak{
+   height: 75px;
+   width: 75px;
+   border-radius: 10px;
+   box-shadow:0 4px 8px black ;
+ }
+
+.kotak img{
+   height: 75px;
+   width: 75px;
+   border-radius: 10px;
+}
+
+.kotak img:hover{
+  transform: scale(1.07);
+  transition: ease 0.6s;
+  border: none;
+}
+
+.kotak:hover{
+   transform: scale(1.07);
+   transition: ease 0.6;
+   border: none;
+}
+
+.school-ket{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   margin-left : 100px;
+}
+
+.school-ket-a{
+   padding-left: 50px;
+}
+
+.school-ket-b{
+   padding-left: 160px;
+}
+
+.school-ket-c{
+   padding-left: 140px;
+}
+
+.school-ket-d{
+   padding-left: 125px;
+}
+
+.work{
+   height: 100vh;
+   background-color: #4070F4;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.work-judul{
+   margin-top: 20px;
+   font-size: 50px;
+   font-weight: 700;
+   color:white;
+   font: bold;
+}
+
+.work-kotak{
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 400px;
+   margin-left: -100px;
+
+}
+
+.work-kotak-bentuk{
+   background-color: white;
+   border-radius: 10px;
+   height: 150px;
+   width: 150px;
+}
+
+.work-kotak-bentuk img{
+   height: 250px;
+   width: 250px;
+   border-radius: 10px;
+}
+
+.work-ket{
+
+   display: flex;
+   gap: 400px;
+   padding-top: 100px;
+
+}
+
+.work-ket p{
+   font-size: 25px;
+    font-weight: 700;
+    color: white;
+    font: bold; 
+    
+}
+
+.work-ket p a{
+   text-decoration: none;
+   color: white;
+   position: relative;
+}
+
+.work-ket p a::after{
+   content: "";
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   width: 0;
+   height: 3px;
+   background: aquamarine;
+   transition: ease 0.5s;
+}
+
+.work-ket p a:hover::after{
+   width: 100%;
+}
+
+.tombol-naik{
+   position: fixed;
+   width: 40px;
+   height: 40px;
+   background-color: rgb(70, 69, 69);
+   border-radius: 100px;
+   bottom: 30px;
+   right: 30px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   cursor: pointer;
+   color: white;
+
+}   
+
+.menu-bar{
+   font-size: 24px;
+   display: none;
+}
+
+.title-responsif{
+    font-weight: 600;
+    font-size: 20px;
+    color: black;
+    display: none;
+}
+
+.sembunyi{
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 250px;
+   height: 100%;
+   background-color: white;
+   box-shadow: 2px 0 15px black;
+   padding: 20px;
+   display: none;
+}
+
+.sembunyi ul{
+    list-style: none;
+}
+
+.sembunyi ul li {
+    margin-bottom: 20px;
+}
+
+.sembunyi ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 16px; 
+    position: relative;
+}
+
+.sembunyi ul li a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 3px;
+    background: aqua;
+    transition: 0.5s;
+}
+
+.sembunyi ul li a:hover::after{
+    width: 100%;
+}
+
+@media screen and (max-width: 768px){
+   .menu {
+      display: none;
+   }
+   .header{
+      padding-right: 100px;
+      gap: 600px;
+   }
+   .title{
+      display: none;
+      margin-right: 100px;
+   }
+   .menu-bar{
+      display: block; 
+   }
+   .title-responsif{
+      display: block;
+   }
+
+}
+
+@media screen and (max-width: 480px){
+  .hero{
+    height: 70vh;
+    display: flex;
+    flex-direction: column  ;
+    justify-content: space-around;
+    padding-top: 150px;
+ }
+
+ .hero-content p{
+    margin: 0;
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: 10px;
+ }
+
+ .hero-content span{
+    color: #4070F4;
+ } 
+
+ .hero-img{
+  width: 50%;
+  height: 50%;
+  margin-top: 10px;
+  align-items: center;
+ }
+
+  .hero-content button{
+    background-color: #4070F4;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    box-shadow: 0 4px 8px black;
+    padding: 10px 35px;
+    margin-left: 10px;
+
+ }
+
+ .hero-content button:hover{
+    background-color: white;
+    transition: ease 0.5s;
+    color: #4070F4;
+ }
+
+}
+
+/* body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  height: 80px;
+  padding: 0 40px;
+  background: white;
+  border-bottom: 1px solid #e0e0e0;
+  z-index: 1000;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 22px;
+  color: black;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  font-size: 16px;
+  position: relative;
+}
+
+.menu ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 3px;
+  background: aqua;
+  transition: 0.5s;
+}
+
+.menu ul li a:hover::after {
+  width: 100%;
+}
+
+
+.hero {
+  height: auto;
+  min-height: 70vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 150px;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.hero-content p {
+  margin: 0;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.hero-content span {
+  color: #4070f4;
+}
+
+.hero-content button {
+  background-color: #4070f4;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  box-shadow: 0 4px 8px black;
+  padding: 10px 35px;
+}
+
+.hero-content button:hover {
+  background-color: white;
+  transition: ease 0.5s;
+  color: #4070f4;
+}
+
+.hero-img img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 20px;
+}
+
+
+.social-media {
+  margin-top: 20px;
+}
+
+.social-media ul {
+  list-style: none;
+  padding: 0;
+}
+
+.social-media ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.social-media ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+}
+
+
+.about {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: auto;
+  background-color: #4070f4;
+  padding: 80px 40px;
+  gap: 50px;
+}
+
+.about-skill {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+.about-box {
+  background-color: white;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 8px black;
+  transition: transform 0.5s ease;
+}
+
+.about-box:hover {
+  transform: scale(1.06);
+}
+
+.about-content-title {
+  font-size: 18px;
+  color: white;
+}
+
+.about-content-subtitle {
+  font-size: 40px;
+  font-weight: 700;
+  color: white;
+  margin: -10px 0;
+}
+
+.about-content-desc {
+  font-weight: 500;
+  color: white;
+}
+
+.about-content button {
+  padding: 10px 40px;
+  font-size: 16px;
+  background-color: white;
+  color: #4070f4;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px black;
+}
+
+.about-content button:hover {
+  background-color: #4070f4;
+  color: white;
+}
+
+
+.school {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.school-judul {
+  font-size: 40px;
+  font-weight: 700;
+  color: #4070f4;
+  margin-bottom: 40px;
+}
+
+.school-kotak {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(75px, 1fr));
+  justify-items: center;
+  gap: 30px;
+}
+
+.kotak img {
+  width: 75px;
+  height: 75px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px black;
+  transition: transform 0.3s ease;
+}
+
+.kotak img:hover {
+  transform: scale(1.07);
+}
+
+.work {
+  min-height: 100vh;
+  background-color: #4070f4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.work-judul {
+  font-size: 40px;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 40px;
+}
+
+.work-kotak {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  justify-items: center;
+  gap: 40px;
+}
+
+.work-kotak-bentuk img {
+  width: 100%;
+  max-width: 250px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px black;
+}
+
+.work-ket {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.work-ket p {
+  font-size: 22px;
+  font-weight: 700;
+  color: white;
+}
+
+.work-ket p a {
+  text-decoration: none;
+  color: white;
+  position: relative;
+}
+
+.work-ket p a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 3px;
+  background: aquamarine;
+  transition: 0.5s;
+}
+
+.work-ket p a:hover::after {
+  width: 100%;
+}
+
+.tombol-naik {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  background-color: rgb(70, 69, 69);
+  border-radius: 100px;
+  bottom: 30px;
+  right: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: white;
+}
+
+
+.menu-bar {
+  font-size: 24px;
+  display: none;
+  cursor: pointer;
+}
+
+.title-responsif {
+  font-weight: 600;
+  font-size: 20px;
+  color: black;
+  display: none;
+}
+
+.sembunyi {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background-color: white;
+  box-shadow: 2px 0 15px black;
+  padding: 20px;
+  display: none;
+  z-index: 999;
+}
+
+.sembunyi ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sembunyi ul li {
+  margin-bottom: 20px;
+}
+
+.sembunyi ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  font-size: 16px;
+  position: relative;
+}
+
+
+@media screen and (max-width: 992px) {
+  .hero-content p {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .hero-content button {
+    display: block;
+    margin: 20px auto;
+  }
+
+  .about {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-content-subtitle {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+  .menu-bar {
+    display: block;
+  }
+  .title {
+    display: none;
+  }
+  .title-responsif {
+    display: block;
+  }
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding-top: 120px;
+  }
+  .hero-img img {
+    max-width: 300px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero-content p {
+    font-size: 30px;
+  }
+  .about-content-subtitle {
+    font-size: 26px;
+  }
+  .work-judul,
+  .school-judul {
+    font-size: 32px;
+  }
+} */

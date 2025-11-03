@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hover Garis dari Kiri</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  a {
+    position: relative;
+    text-decoration: none;
+    color: #333;
+    font-size: 24px;
+    padding-bottom: 5px;
+  }
+
+  /* garis bawah semula tidak terlihat */
+  a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #4CAF50;
+    transition: width 0.3s ease; /* animasi halus */
+  }
+
+  /* saat di-hover, garis muncul dari kiri */
+  a:hover::after {
+    width: 100%;
+  }
+</style>
+</head>
+<body>
+  <a href="#">Hover Saya</a>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Menu Hamburger CSS Only</title>
+<style>
+  :root {
+    --accent: #ddd;
+    --text: #111;
+  }
+  body {
+    margin: 0;
+    font-family: serif;
+  }
+
+  /* sembunyikan checkbox */
+  #menu-toggle {
+    display: none;
+  }
+
+  /* tombol hamburger */
+  .hamburger {
+    position: fixed;
+    top: 18px;
+    left: 18px;
+    z-index: 100;
+    width: 40px;
+    height: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+
+  .hamburger span {
+    height: 4px;
+    background: var(--text);
+    border-radius: 2px;
+    transition: all 0.3s ease;
+  }
+
+  /* posisi menu */
+  nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 260px;
+    background: #fff;
+    padding: 80px 24px 24px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    transform: translateX(-100%);
+    transition: transform 0.35s ease;
+    z-index: 90;
+  }
+
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  nav li {
+    font-size: 32px;
+    padding: 16px 0;
+    border-top: 4px solid var(--accent);
+  }
+
+  nav li:first-child {
+    border-top: none;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: var(--text);
+  }
+
+  /* buka menu saat checkbox dicentang */
+  #menu-toggle:checked ~ nav {
+    transform: translateX(0);
+  }
+
+  /* animasi hamburger jadi X */
+  #menu-toggle:checked + label span:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+  }
+  #menu-toggle:checked + label span:nth-child(2) {
+    opacity: 0;
+  }
+  #menu-toggle:checked + label span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+  }
+
+  main {
+    padding: 100px 20px;
+  }
+</style>
+</head>
+<body>
+
+  <!-- Checkbox untuk toggle -->
+  <input type="checkbox" id="menu-toggle">
+
+  <!-- Tombol hamburger -->
+  <label for="menu-toggle" class="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </label>
+
+  <!-- Drawer menu -->
+  <nav>
+    <ul>
+      <li><a href="#">Beranda</a></li>
+      <li><a href="#">Galeri</a></li>
+      <li><a href="#">Event</a></li>
+      <li><a href="#">Tentang</a></li>
+      <li><a href="#">Kontak</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Contoh Halaman</h1>
+    <p>Menu di kiri atas bisa dibuka dan ditutup tanpa JavaScript.</p>
+  </main>
+
+</body>
+</html>
