@@ -97,9 +97,10 @@ body{
  }
 
  .hero-img img{
-    height: 90%;
-    width: 100%;
+    height: 80%;
+    width: 80%;
     border-radius: 20px;
+    margin-top: 10px;
 
  }
  
@@ -435,43 +436,185 @@ body{
 
  .hero-content p{
     margin: 0;
-    font-size: 40px;
+    font-size: 50px;
     font-weight: bold;
-    margin-left: 10px;
+    margin-left: 15px;
  }
 
  .hero-content span{
     color: #4070F4;
  } 
 
+ .hero-content button{
+  margin-left: 15px;
+ }
+
  .hero-img{
-  width: 50%;
-  height: 50%;
-  margin-top: 10px;
+  width: 80%;
+  height: 80%;
+  margin-top: 20px;
+  margin-left: 85px;
   align-items: center;
  }
 
-  .hero-content button{
-    background-color: #4070F4;
+ .social-media{
+  margin-left: 95px;
+ }
+
+ .about{
+  flex-direction: column;
+  height: auto;
+  padding: 50px 0;
+  gap: 20px;
+ } 
+
+ .about-content p {
+  width: auto;
+ }
+
+ .about-skill{
+  grid-template-columns: repeat(1, 1fr);
+ }
+
+ .about-content{
+  margin: 20px;
+ }
+
+ .about-content-title{
+  font-size: 16px;
+ }
+
+ .school{
+   height: 100vh;
+   display: flex;
+   flex-direction:column;
+   text-align: center;
+ }
+
+ .school-judul{
+   margin-top: 100px;
+   font-size: 50px;
+   font-weight: 700;
+   color: #4070F4;
+   font: bold;
+ }
+
+ .school-kotak{
+   display: grid;
+   grid-template-columns: repeat(1, 1fr);
+   align-items: center;
+   margin-left: 200px;
+   gap: 150px;
+ }
+ .kotak{
+   height: 75px;
+   width: 75px;
+   border-radius: 10px;
+   box-shadow:0 4px 8px black ;
+ }
+
+.kotak img{
+   height: 75px;
+   width: 75px;
+   border-radius: 10px;
+}
+
+.kotak img:hover{
+  transform: scale(1.07);
+  transition: ease 0.6s;
+  border: none;
+}
+
+.kotak:hover{
+   transform: scale(1.07);
+   transition: ease 0.6;
+   border: none;
+}
+
+.school-ket{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-left : 0px;
+   margin-top: -665px;
+   gap: 60px;
+}
+
+.school-ket-a{
+   padding-left: 0px;
+}
+
+.school-ket-b{
+   margin-left: -160px;
+}
+
+.school-ket-c{
+   margin-left: -145px;
+}
+
+.school-ket-d{
+   margin-left: -125px;
+}
+
+.work-kotak{
+   display: grid;
+   grid-template-columns: repeat(1, 1fr);
+   gap: 400px;
+   margin-left: -100px;
+
+}
+
+.work-kotak-bentuk{
+   background-color: white;
+   border-radius: 10px;
+   height: 0px;
+   width: 150px;
+}
+
+.work-kotak-bentuk img{
+   height: 250px;
+   width: 250px;
+   border-radius: 10px;
+}
+
+.work-ket{
+
+   display: flex;
+   flex-direction: column;
+   gap: 310px;
+   margin-top: -260px;
+
+}
+
+.work-ket p{
+   font-size: 25px;
+    font-weight: 700;
     color: white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    margin-top: 20px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    box-shadow: 0 4px 8px black;
-    padding: 10px 35px;
-    margin-left: 10px;
+    font: bold; 
+    
+}
 
- }
+.work-ket p a{
+   text-decoration: none;
+   color: white;
+   position: relative;
+}
 
- .hero-content button:hover{
-    background-color: white;
-    transition: ease 0.5s;
-    color: #4070F4;
- }
+.work-ket p a::after{
+   content: "";
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   width: 0;
+   height: 3px;
+   background: aquamarine;
+   transition: ease 0.5s;
+}
 
+.work-ket p a:hover::after{
+   width: 100%;
+}
+  
 }
 
 /* body {
