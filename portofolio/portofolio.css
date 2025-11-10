@@ -208,8 +208,9 @@ body{
    display: grid;
    grid-template-columns: repeat(4, 1fr);
    align-items: center;
-   margin-left: 173px;
-   gap: 50px;
+   margin-left: 130px;
+   gap: 135px;
+   padding-top:50px;
  }
  .kotak{
    height: 75px;
@@ -237,26 +238,9 @@ body{
 }
 
 .school-ket{
-   display: flex;
-   flex-direction: row;
-   align-items: center;
-   margin-left : 100px;
-}
-
-.school-ket-a{
-   padding-left: 50px;
-}
-
-.school-ket-b{
-   padding-left: 160px;
-}
-
-.school-ket-c{
-   padding-left: 140px;
-}
-
-.school-ket-d{
-   padding-left: 125px;
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   gap: 5px;
 }
 
 .work{
@@ -538,28 +522,12 @@ body{
 }
 
 .school-ket{
-   display: flex;
-   flex-direction: column;
+   display: grid;
+   grid-template-columns: repeat(1, 1fr);
    align-items: center;
    margin-left : 0px;
    margin-top: -665px;
-   gap: 60px;
-}
-
-.school-ket-a{
-   padding-left: 0px;
-}
-
-.school-ket-b{
-   margin-left: -160px;
-}
-
-.school-ket-c{
-   margin-left: -145px;
-}
-
-.school-ket-d{
-   margin-left: -125px;
+   gap: 140px;
 }
 
 .work{
