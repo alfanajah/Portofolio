@@ -426,8 +426,14 @@ body{
 }
 
 @media screen and (max-width: 480px){
+  .header{
+    gap:80px;
+    
+  
+  }
   .hero{
-    height: 70vh;
+    height: 100vh;
+    font-size: 5px;
     display: flex;
     flex-direction: column  ;
     justify-content: space-around;
@@ -485,7 +491,7 @@ body{
  }
 
  .school{
-   height: 100vh;
+   height: 200vh;
    display: flex;
    flex-direction:column;
    text-align: center;
@@ -554,6 +560,10 @@ body{
 
 .school-ket-d{
    margin-left: -125px;
+}
+
+.work{
+  height:160vh;
 }
 
 .work-kotak{
